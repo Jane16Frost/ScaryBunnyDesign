@@ -1,0 +1,92 @@
+/* font-family: 'Comforter Brush', cursive;
+font-family: 'Montagu Slab', serif;
+black : #000
+Dark red: #561018
+Light Red #E30017
+Dark Gray #141414
+Light Gray #535053
+Off White #F0EFF4
+*/
+body
+{
+  margin: 0;
+  font-family: 'Montagu Slab', serif;
+  background-image: linear-gradient(315deg, #535053 60%, #141414);
+  overflow-x: hidden;
+}
+.spacer{
+  background-color: #535053;
+  height: 3px;
+}
+.bar{
+  background-image: linear-gradient(90deg, #E30017, #561018);
+  height: 3px;
+  width: 60%;
+}
+.webTitle{
+  font-family: 'Comforter Brush', cursive;
+  color: #E30017;
+  font-size: 104px;
+  text-shadow: 5px 10px 0 #000000;
+}
+.webTitleShadow
+{
+  font-family: 'Comforter Brush', cursive;
+  color: #000;
+  font-size: 124px;
+  position: absolute;
+  top: 5%;
+  z-index: 0;
+  display: none;
+}
+.tagLine{
+  background-color: #561018;
+  background-image: linear-gradient(90deg, #E30017 0%, #561018 85%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 36px;
+}
+.pageHeader{
+  /* background-image: linear-gradient(315deg, #535053 70%, #141414); */
+  padding: 5% 15% 10% 5%;
+}
+.artGallery{
+height: 1000px;
+}
+.centerCircle{
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+background-color: black;
+position: absolute;
+top: 1200px;
+left: 100%;
+transform: translate(-50%, -50%);
+}
+.picRot{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 280px;
+  width: 200px;
+}
+.PR1{
+transform: translate(-50%, -50%) rotate(180deg);
+}
+.PR2{
+transform: translate(-50%, -50%) rotate(90deg);
+}
+.PR3{
+transform: translate(-50%, -50%) rotate(0deg);
+}
+.PR4{
+transform: translate(-50%, -50%) rotate(270deg);
+}
+.artGalleryImg{
+  width:100%;
+  border-radius: 10px;
+}
