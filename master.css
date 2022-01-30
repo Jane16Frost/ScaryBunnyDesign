@@ -90,3 +90,26 @@ transform: translate(-50%, -50%) rotate(270deg);
   width:100%;
   border-radius: 10px;
 }
+@media (max-width: 992px) {
+  .centerCircle{
+    background-color: transparent;
+    width: 50%;
+    height: 50%;
+    top: 1200px;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  .PR1{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  .PR2{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  .PR3{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  .PR4{
+    transform: translate(-50%, -50%) rotate(0deg);
+    z-index: -1;
+  }
+}
