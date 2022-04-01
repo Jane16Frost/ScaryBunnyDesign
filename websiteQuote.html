@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Montagu+Slab:wght@367&family=Rochester&family=Vujahday+Script&display=swap" rel="stylesheet">
+
+  <title>Website Quote Generator</title>
+  <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <div class="subPageHeader">
+    <h1 class="webTitle">Website Quote Generator</h1>
+
+  </div>
+  <div class="spacerLeft">
+    <div class="bar">
+
+    </div>
+  </div>
+  <!-- **********************
+            Quote Page
+       **********************-->
+  <div class="quotePage">
+
+    <!-- Multi vs Single Page -->
+    <div class="prevQuestionSquare">
+      <h3 class="QPh3">Single Page Website</h3>
+    </div>
+    <div class="prevQuestionSquare">
+      <h3 class="QPh3">Multi Page Website</h3>
+    </div>
+    <div class="QPscreen">
+      <button type="button" name="button" class="PageBtn"><h3 class="QPh3 PageTypeHeader">Single Page Website</h3></button>
+      <button type="button" name="button" class="PageBtn"><h3 class="QPh3 PageTypeHeader">Multi-Page Website</h3></button>
+    </div>
+    <!-- Sections/ Page Types -->
+    <div class="prevQuestionBar hidden">
+      <h3 class="QPh3 PageTypeHeader">Desired Pages/Sections</h3>
+
+    </div>
+    <div class="QPscreen hidden">
+      <h3 class="QPh3 PageTypeHeader">Desired Pages/Sections</h3>
+
+      <table style="margin: auto;">
+        <tr>
+          <td class="nameCol"><h4 class="placeHolder">Homepage</h4></td>
+          <td class="checkCol"><div class="checkbox"></div></td>
+          <td class="nameCol"><h4 class="placeHolder">Sales</h4></td>
+          <td class="checkCol"><div class="checkbox"></div></td>
+        </tr>
+        <tr>
+          <td class="nameCol"><h4 class="placeHolder">Contact Page</h4></td>
+          <td class="checkCol"><div class="checkbox"></div></td>
+          <td class="nameCol"><h4 class="placeHolder">Testimonials</h4></td>
+          <td class="checkCol"><div class="checkbox"></div></td>
+        </tr>
+        <tr>
+          <td class="nameCol"><h4 class="placeHolder">Quote Generator</h4></td>
+          <td class="checkCol"><div class="checkbox"></div></td>
+          <td class="nameCol"><h4 class="placeHolder">About Us</h4></td>
+          <td class="checkCol"><div class="checkbox"></div></td>
+        </tr>
+        <tr>
+          <td class="nameCol"><h4 class="placeHolder">Features</h4></td>
+          <td class="checkCol"><div class="checkbox"></div></td>
+          <td class="nameCol"><h4 class="placeHolder">Other: </h4></td>
+          <td class="checkCol">
+          <button type="button" name="button" class="counterBtn"> < </button>
+          <!-- <div class="counterScreen"> -->
+            <h4 class="counterNum">0</h4>
+          <!-- </div> -->
+          <button type="button" name="button" class="counterBtn"> > </button>
+          </td>
+        </tr>
+    </table>
+          <button type="button" name="button" class="nextBtn">Next Page</button>
+</div>
+<!-- Features Selector -->
+<div class="prevQuestionBar hidden">
+  <h3 class="QPh3">Desired Features</h3>
+</div>
+<div class="QPscreen hidden">
+  <h3 class="QPh3">Desired Features</h3>
+  <table style="margin: auto;">
+    <tr>
+      <td class="nameCol"><h4 class="placeHolder">Place Holder</h4></td>
+      <td class="checkCol"><div class="checkbox"></div></td>
+      <td class="nameCol"><h4 class="placeHolder">Place Holder</h4></td>
+      <td class="checkCol"><div class="checkbox"></div></td>
+    </tr>
+    <tr>
+      <td class="nameCol"><h4 class="placeHolder">Place Long Holder</h4></td>
+      <td class="checkCol"><div class="checkbox"></div></td>
+      <td class="nameCol"><h4 class="placeHolder">Place Holder</h4></td>
+      <td class="checkCol"><div class="checkbox"></div></td>
+    </tr>
+    <tr>
+      <td class="nameCol"><h4 class="placeHolder">Place Holder</h4></td>
+      <td class="checkCol"><div class="checkbox"></div></td>
+      <td class="nameCol"><h4 class="placeHolder">Place Holder</h4></td>
+      <td class="checkCol"><div class="checkbox"></div></td>
+    </tr>
+    <tr>
+      <td class="nameCol"><h4 class="placeHolder">Place Holder</h4></td>
+      <td class="checkCol"><div class="checkbox"></div></td>
+      <td class="nameCol"><h4 class="placeHolder">Other: </h4></td>
+      <td class="checkCol">
+        <button type="button" name="button" class="counterBtn"> < </button>
+        <!-- <div class="counterScreen"> -->
+          <h4 class="counterNum">0</h4>
+          <!-- </div> -->
+          <button type="button" name="button" class="counterBtn"> > </button>
+        </td>
+      </tr>
+    </table>
+    <button type="button" name="button" class="nextBtn">Next Page</button>
+  </div>
+
+    <!-- Estimate Page -->
+    <div class="costPage QPscreen hidden">
+      <h2 class="QPh2">Price Estimate</h2>
+      <div class="CostBox">
+        <h1 class="Cost">$000.00</h1>
+      </div>
+      <button type="button" name="button" class= "Generate">Generate Price</button>
+    </div>
+    <!-- Dynamic Pages
+      <div class="prevQuestionBar hidden">
+        <h3 class="QPh3" class="DynamicPageHeader">Dynamic Page(s)</h3>
+
+      </div>
+      <div class="QPscreen hidden">
+        <h3 class="QPh3" class="DynamicPageHeader">Dynamic Page(s)</h3>
+        <button type="button" name="button" class="DynamicBtn">Yes</button>
+        <button type="button" name="button" class="helpBtn">?</button>
+        <button type="button" name="button" class="DynamicBtn">No</button>
+      </div> -->
+
+  </div>
+  <script src="QuoteGenerator.js" charset="utf-8"></script>
+</body>
+
+</html>

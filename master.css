@@ -7,30 +7,52 @@ Dark Gray #141414
 Light Gray #535053
 Off White #F0EFF4
 */
-body
-{
+body {
   margin: 0;
   font-family: 'Montagu Slab', serif;
   background-image: linear-gradient(315deg, #535053 60%, #141414);
   overflow-x: hidden;
 }
-.spacer{
-  background-color: #535053;
-  height: 3px;
+
+/****************************************
+          Spacer Bar Css
+****************************************/
+.spacerLeft {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 30%;
+  margin: 10% 30% 10% 5%;
 }
-.bar{
+
+.bar {
   background-image: linear-gradient(90deg, #E30017, #561018);
   height: 3px;
-  width: 60%;
+  width: 100%;
+  text-align: right;
 }
-.webTitle{
+
+.spacerRight {
+  text-align: right;
+  margin: 10% 5% 10% 30%;
+}
+
+
+/*****************************************
+      Page Header CSS
+*****************************************/
+.pageHeader {
+  /* background-image: linear-gradient(315deg, #535053 70%, #141414); */
+  padding: 5% 15% 10% 5%;
+}
+
+.webTitle {
   font-family: 'Comforter Brush', cursive;
   color: #E30017;
   font-size: 104px;
   text-shadow: 5px 10px 0 #000000;
 }
-.webTitleShadow
-{
+
+.webTitleShadow {
   font-family: 'Comforter Brush', cursive;
   color: #000;
   font-size: 124px;
@@ -39,7 +61,8 @@ body
   z-index: 0;
   display: none;
 }
-.tagLine{
+
+.tagLine {
   background-color: #561018;
   background-image: linear-gradient(90deg, #E30017 0%, #561018 85%);
   background-size: 100%;
@@ -49,24 +72,39 @@ body
   -moz-text-fill-color: transparent;
   font-size: 36px;
 }
-.pageHeader{
-  /* background-image: linear-gradient(315deg, #535053 70%, #141414); */
-  padding: 5% 15% 10% 5%;
+
+/*************************
+      Art Gallery CSS
+**************************/
+.artGallery {
+  height: 700px;
 }
-.artGallery{
-height: 1000px;
+
+.artGalleryQuestions {
+  color: #561018;
+  margin-top: 300px;
+  margin-right: 440px;
+  margin-left: 5%;
 }
-.centerCircle{
+
+.artGallery h1 {
+  margin-top: 300px;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.centerCircle {
   height: 200px;
   width: 200px;
   border-radius: 100px;
-background-color: black;
-position: absolute;
-top: 1200px;
-left: 100%;
-transform: translate(-50%, -50%);
+  background-color: black;
+  position: absolute;
+  top: 1450px;
+  left: 100%;
+  transform: translate(-50%, -50%);
 }
-.picRot{
+
+.picRot {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -74,42 +112,342 @@ transform: translate(-50%, -50%);
   height: 280px;
   width: 200px;
 }
-.PR1{
-transform: translate(-50%, -50%) rotate(180deg);
+
+.PR1 {
+  transform: translate(-50%, -50%) rotate(180deg);
 }
-.PR2{
-transform: translate(-50%, -50%) rotate(90deg);
+
+.PR2 {
+  transform: translate(-50%, -50%) rotate(90deg);
 }
-.PR3{
-transform: translate(-50%, -50%) rotate(0deg);
+
+.PR3 {
+  transform: translate(-50%, -50%) rotate(0deg);
 }
-.PR4{
-transform: translate(-50%, -50%) rotate(270deg);
+
+.PR4 {
+  transform: translate(-50%, -50%) rotate(270deg);
 }
-.artGalleryImg{
-  width:100%;
+
+.artGalleryImg {
+  width: 100%;
   border-radius: 10px;
 }
+
+/*************************
+      artGalleryMobile  CSS
+**************************/
 @media (max-width: 992px) {
-  .centerCircle{
+  .artGallery {
+    height: auto;
+  }
+
+  .artGalleryQuestions {
+    color: #561018;
+    margin-top: 25px;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .artGallery h1 {
+    margin-top: 400px;
+    margin-left: 5%;
+    text-align: right;
+    margin-bottom: 50px;
+  }
+
+  .centerCircle {
     background-color: transparent;
     width: 50%;
     height: 50%;
-    top: 1200px;
+    top: 1220px;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
   }
-  .PR1{
+
+  .PR1 {
     transform: translate(-50%, -50%) rotate(0deg);
   }
-  .PR2{
+
+  .PR2 {
     transform: translate(-50%, -50%) rotate(0deg);
   }
-  .PR3{
+
+  .PR3 {
     transform: translate(-50%, -50%) rotate(0deg);
   }
-  .PR4{
+
+  .PR4 {
     transform: translate(-50%, -50%) rotate(0deg);
     z-index: -1;
   }
+}
+
+/*****************************
+    Website Portfolio  CSS
+******************************/
+.websitePortfolio {
+  padding: 5%;
+  padding-top: 10%;
+  overflow: hidden;
+}
+
+.websiteShowcase {
+  height: 400px;
+  width: 700px;
+  overflow: hidden;
+}
+
+.websiteShow {
+  height: 400px;
+  width: 700px;
+  position: absolute;
+  z-index: -1;
+  background-color: #E30017;
+  background-image: linear-gradient(90deg, #E30017 0%, #561018 85%);
+}
+
+.SCBTitle {
+  font-size: 56px;
+  margin-left: 20px;
+}
+
+.SCBLogo {
+  width: 25%;
+  margin-left: 485px;
+  transform: translateY(-60px);
+}
+
+.SCBInfo {
+  font-size: 24px;
+  margin-left: 60px;
+}
+
+.slide {
+  height: 466px;
+  width: 180px;
+  background-color: transparent;
+  display: inline-block;
+  transform: translate(53px, -500px) rotate(345deg);
+  border: solid 7px #535053;
+  border-top-width: 466px;
+  border-bottom-width: 500px;
+}
+
+.slideFrameLeft {
+  position: absolute;
+  transform: translateX(-130px) rotate(345deg);
+  height: 446px;
+  width: 180px;
+  background-color: #535053;
+}
+
+.slideFrameRight {
+  position: absolute;
+  transform: translate(635px, -55px) rotate(345deg);
+  height: 446px;
+  width: 180px;
+  background-color: #535053;
+}
+
+.websitePortfolioHeader {
+  position: absolute;
+  z-index: 1;
+  transform: translate(30%, -355%);
+  background-color: #561018;
+  background-image: linear-gradient(90deg, #E30017 0%, #561018 85%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+/* *********************************
+      Website Quote
+********************************* */
+.subPageHeader {
+  /* background-image: linear-gradient(315deg, #535053 70%, #141414); */
+  padding: 5% 15% 0 5%;
+}
+
+.quotePage {
+  text-align: center;
+  /* height: 2000px; */
+}
+
+.prevQuestionSquare {
+  width: 30%;
+  height: 50px;
+  background-color: #561018;
+  margin: 10px 2%;
+  display: inline-block;
+  border-radius: 25px;
+}
+.prevQuestionSquare:hover{
+  box-shadow: 0 0 10px #141414;
+}
+
+.prevQuestionBar {
+  width: 64%;
+  height: 50px;
+  /* border-radius: 25px; */
+  background-color: #561018;
+  margin: 10px auto;
+  /* display: inline-block; */
+}
+.prevQuestionBar:hover{
+  box-shadow: 0 0 10px #141414;
+}
+
+.nextBtn{
+  height: 40px;
+  width: 150px;
+  background-color: #561018;
+  color: #E30017;
+  font-size: 20px;
+  font-family: 'Montagu Slab', serif;
+  margin-top: 40px;
+  border: none;
+  border-radius: 25px;
+}
+.nextBtn:hover{
+  box-shadow: 0 0 10px #000;
+  color: #000;
+}
+
+.QPscreen {
+  border-radius: 25px;
+  width: 64%;
+  height: 500px;
+  background-color: #141414;
+  margin: 10px auto 400px;
+  /* display: inline-block; */
+  padding: 2%;
+  text-align: center;
+}
+
+.QPh3 {
+  margin: 0;
+  font-size: 36px;
+  color: #E30017;
+}
+
+.PageBtn{
+  width: 250px;
+  height: 150px;
+  background-color: #561018;
+  border-radius: 25px;
+  font-family: 'Montagu Slab', serif;
+  border: none;
+  color: #141414;
+  margin: 125px 20px;
+}
+.PageBtn:hover{
+  box-shadow: 0px 0px 25px #E30017;
+    color: #E30017;
+}
+
+tr {
+  height: 50px;
+}
+
+.placeHolder {
+  color: #E30017;
+  font-size: 20px;
+}
+
+.checkPick {
+  width: 20px;
+  height: 20px;
+  color: #e30017;
+}
+
+
+.checkCol {
+  width: 80px;
+}
+
+.nameCol {
+  text-align: left;
+  width: 180px;
+}
+
+.checkbox {
+  border: 4px solid #561018;
+  height: 16px;
+  width: 16px;
+  margin: auto;
+  transition: all .3s ease;
+}
+
+.checked {
+  width: 20px;
+  height: 8px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #E30017;
+  border-left-color: #E30017;
+  margin: auto;
+  transform: rotate(-50deg) translate(4px, -4px);
+  transition: all .3s ease;
+}
+.counterScreen{
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.counterBtn {
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+  width: 20px;
+  background-color: #561018;
+  position: relative;
+  top: -2px;
+  color: #E30017;
+}
+
+.counterNum{
+  color: #e30017;
+  font-size: 22px;
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.QPh2{
+font-size: 92px;
+color: #E30017;
+font-family: 'Comforter Brush', cursive;
+background-image: linear-gradient(180deg, #E30017, #561018);
+-webkit-background-clip: text;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-text-fill-color: transparent;
+margin: 10px;
+}
+
+.Cost{
+font-size: 72px;
+color: #E30017;
+
+}
+.Generate{
+font-size: 32px;
+color: #141414;
+  background-color: #561018;
+  width: 400px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+font-family: 'Montagu Slab', serif;
+}
+.Generate:hover{
+  box-shadow: 0px 0px 25px #E30017;
+    color: #E30017;
+}
+
+.hidden {
+  display: none;
 }
